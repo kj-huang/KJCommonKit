@@ -41,6 +41,7 @@ class KJAlertAction: NSObject {
     ///   - style: 类型
     ///   - custom: 自定义
     ///   - handler: 点击回调
+    @objc(initTitle:style:custom:handler:)
     init(title: String?,
          style: KJAlertAction.Style = .default,
          custom: KJAlertActionHandler? = nil,
@@ -52,6 +53,20 @@ class KJAlertAction: NSObject {
             custom?(self)
         }
         self.handler = handler
+    }
+    
+    /// 类方法(方便OC使用)
+    /// - Parameters:
+    ///   - title: 文案
+    ///   - style: 类型
+    ///   - custom: 自定义
+    ///   - handler: 点击回调
+    /// - Returns: KJAlertAction
+    static func action(title: String?,
+                       style:KJAlertAction.Style = .default,
+                       custom: KJAlertActionHandler? = nil,
+                       handler: KJAlertActionHandler? = nil) -> KJAlertAction {
+        return KJAlertAction(title: title, style: style, custom: custom, handler: handler)
     }
 }
 

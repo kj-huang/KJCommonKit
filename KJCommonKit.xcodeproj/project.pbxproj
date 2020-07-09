@@ -24,7 +24,6 @@
 		97AF7A9824B5B5620001EF0B /* KJCommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9724B5B5620001EF0B /* KJCommonHelper.swift */; };
 		97AF7A9A24B5B6D60001EF0B /* KJFloatEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9924B5B6D60001EF0B /* KJFloatEx.swift */; };
 		97AF7A9C24B5B9660001EF0B /* KJEdgeInsetsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9B24B5B9660001EF0B /* KJEdgeInsetsEx.swift */; };
-		97AF7A9E24B5CFA90001EF0B /* KJAlertActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9D24B5CFA90001EF0B /* KJAlertActionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		97AF7A9724B5B5620001EF0B /* KJCommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJCommonHelper.swift; sourceTree = "<group>"; };
 		97AF7A9924B5B6D60001EF0B /* KJFloatEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJFloatEx.swift; sourceTree = "<group>"; };
 		97AF7A9B24B5B9660001EF0B /* KJEdgeInsetsEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJEdgeInsetsEx.swift; sourceTree = "<group>"; };
-		97AF7A9D24B5CFA90001EF0B /* KJAlertActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJAlertActionItem.swift; sourceTree = "<group>"; };
 		A09BEDED0A92D3B56B3C1577 /* Pods_KJCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B3D2A195F23B99CAFEE68A /* Pods-KJCommonKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCommonKit.release.xcconfig"; path = "Target Support Files/Pods-KJCommonKit/Pods-KJCommonKit.release.xcconfig"; sourceTree = "<group>"; };
 		D966AD13539FF617E2049C8E /* Pods-KJCommonKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCommonKit.debug.xcconfig"; path = "Target Support Files/Pods-KJCommonKit/Pods-KJCommonKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				97AF7A8A24B5701D0001EF0B /* KJAlertController.swift */,
-				97AF7A9D24B5CFA90001EF0B /* KJAlertActionItem.swift */,
 				97AF7A8C24B5714C0001EF0B /* KJAlertAction.swift */,
 				97AF7A9024B5A84C0001EF0B /* KJAlertEnumEx.swift */,
 			);
@@ -378,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97AF7A9E24B5CFA90001EF0B /* KJAlertActionItem.swift in Sources */,
 				97AF7A5D24B56FA40001EF0B /* ViewController.swift in Sources */,
 				97AF7A9824B5B5620001EF0B /* KJCommonHelper.swift in Sources */,
 				97AF7A8D24B5714C0001EF0B /* KJAlertAction.swift in Sources */,

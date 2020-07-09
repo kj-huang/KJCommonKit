@@ -81,7 +81,8 @@ class KJAlertController: UIViewController {
     
     // MARK: - init
     
-    /// 禁止外部init初始化
+    /// 外部init初始化
+    @objc(initTitle:message:style:)
     init(title: String? = nil, message: String? = nil, style: KJAlertController.Style = .sheet) {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .overCurrentContext

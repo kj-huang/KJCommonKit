@@ -12,6 +12,7 @@ import Foundation
 
 extension KJAlertController {
     
+    @objc(KJAlertControllerStyle)
     public enum Style: Int {
         
         case sheet = 0
@@ -23,6 +24,7 @@ extension KJAlertController {
 
 extension KJAlertAction {
     
+    @objc(KJAlertActionStyle)
     public enum Style: Int {
         
         case `default` = 0
