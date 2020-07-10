@@ -76,6 +76,9 @@ class KJAlertController: UIViewController {
         }
     }
     
+    /// 点击空白部分是否自动消失
+    open var autoDisappear: Bool = true
+    
     /// 按钮集合
     private(set) var items:[KJAlertAction] = []
     
@@ -302,6 +305,26 @@ class KJAlertController: UIViewController {
                                     height: separatorSize)
             contentView.addSubview(lineView)
         }
+        
+        // 添加手势
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapActionHandler))
+        tap.delegate = self
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func didTapActionHandler() {
+        if autoDisappear {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+}
+
+extension KJAlertController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view == contentView || touch.view?.isKind(of: UIButton.self) == true {
+            return false
+        }
+        return true
     }
 }
 

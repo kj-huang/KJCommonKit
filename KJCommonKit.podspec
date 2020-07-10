@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'KJCommonKit'
-s.version          = '0.0.4'
+s.version          = '0.0.5'
 s.summary          = 'KJCommonKit'
 s.description      = <<-DESC
 TODO: 一些原生小组件
@@ -18,9 +18,9 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'jin' => 'kegem@foxmail.com' }
 s.source           = { :git => 'https://github.com/kj-huang/KJCommonKit.git', :tag => s.version.to_s }
 s.ios.deployment_target = '9.0'
-s.source_files = 'KJCommonKit/KJCommonKit/KJAlertController/*', 'KJCommonKit/KJCommonKit/KJCommonCore/*'
+s.source_files = 'KJCommonKit/KJCommonKit/KJAlertController', 'KJCommonKit/KJCommonKit/KJCommonCore'
 s.frameworks = 'UIKit', 'Foundation'
-s.swift_versions = '5.0'
+s.swift_version = '5.0'
 
 #s.subspec 'KJAlertController' do |ss|
 #ss.source_files = 'KJCommonKit/KJCommonKit/KJAlertController'
