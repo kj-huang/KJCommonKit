@@ -11,7 +11,6 @@ import UIKit
 
 @objcMembers
 public class KJAlertAction: NSObject {
-    
     typealias KJAlertActionHandler = (KJAlertAction) -> Void
     
     /// 标题
@@ -42,10 +41,10 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     @objc(initTitle:style:custom:handler:)
-    internal init(title: String?,
+    public init(title: String?,
                 style: KJAlertAction.Style = .default,
-                custom: KJAlertActionHandler? = nil,
-                handler: KJAlertActionHandler? = nil) {
+                custom: ((KJAlertAction) -> Void)? = nil,
+                handler: ((KJAlertAction) -> Void)? = nil) {
         super.init()
         self.title = title
         defer {
@@ -62,10 +61,10 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     /// - Returns: KJAlertAction
-    internal static func action(title: String?,
+    public static func action(title: String?,
                               style:KJAlertAction.Style = .default,
-                              custom: KJAlertActionHandler? = nil,
-                              handler: KJAlertActionHandler? = nil) -> KJAlertAction {
+                              custom: ((KJAlertAction) -> Void)? = nil,
+                              handler: ((KJAlertAction) -> Void)? = nil) -> KJAlertAction {
         return KJAlertAction(title: title, style: style, custom: custom, handler: handler)
     }
 }
