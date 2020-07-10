@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'KJCommonKit'
-s.version          = '0.0.10'
+s.version          = '0.0.11'
 s.summary          = 'KJCommonKit'
 s.description      = <<-DESC
 TODO: 一些原生小组件

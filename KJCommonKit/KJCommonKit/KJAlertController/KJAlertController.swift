@@ -86,7 +86,7 @@ public class KJAlertController: UIViewController {
     
     /// 外部init初始化
     @objc(initTitle:message:style:)
-    public init(title: String? = nil, message: String? = nil, style: KJAlertController.Style = .sheet) {
+    public init(title: String? = nil, message: String? = nil, style: KJAlertController.Style = .alert) {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
@@ -97,9 +97,16 @@ public class KJAlertController: UIViewController {
         }
     }
     
+    /// 禁止外界使用下面的初始化
     internal required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    private override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    private init() {super.init(nibName: nil, bundle: nil)}
+    private class func new() {}
+    
     
     /// 展示
     public func show(_ from: UIViewController) {

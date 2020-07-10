@@ -67,6 +67,11 @@ public class KJAlertAction: NSObject {
                               handler: ((KJAlertAction) -> Void)? = nil) -> KJAlertAction {
         return KJAlertAction(title: title, style: style, custom: custom, handler: handler)
     }
+    
+    /// 禁止外界使用init初始化
+    private override init() {}
+    private class func new() {}
+    
 }
 
 
