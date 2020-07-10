@@ -9,7 +9,7 @@
 import UIKit
 
 @objcMembers
-class KJAlertController: UIViewController {
+public class KJAlertController: UIViewController {
     
     // MARK: - var 所有属性请在present之前调用
     
@@ -252,7 +252,7 @@ class KJAlertController: UIViewController {
         return sv
     }()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // 断言、避免出现特殊情况
         assert(self.navigationController == nil, "请present显示，不用设置UINavigationController")
@@ -320,7 +320,7 @@ class KJAlertController: UIViewController {
 }
 
 extension KJAlertController: UIGestureRecognizerDelegate {
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view == contentView || touch.view?.isKind(of: UIButton.self) == true {
             return false
         }

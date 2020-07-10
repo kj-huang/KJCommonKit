@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @objcMembers
-class KJAlertAction: NSObject {
+public class KJAlertAction: NSObject {
     
     typealias KJAlertActionHandler = (KJAlertAction) -> Void
     
