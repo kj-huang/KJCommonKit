@@ -4,7 +4,7 @@
 //
 //  Created by 黄克瑾 on 2020/7/8.
 //  Copyright © 2020 黄克瑾. All rights reserved.
-//
+//  特殊自定义 UIAlertController
 
 import UIKit
 
@@ -64,7 +64,8 @@ public class KJAlertController: UIViewController {
     /// 分割线的宽度(按钮水平排列时)或高度(按钮垂直排列或内容分割线时)
     open var separatorSize: CGFloat = 0.5
     
-    
+    /// 内容部分的圆角，默认10.0
+    open var contengtCornerRadius: CGFloat = 10.0
     
     /// 按钮的高度， 默认38.0
     open var itemHeight: CGFloat = 40.0
@@ -125,7 +126,7 @@ public class KJAlertController: UIViewController {
     private lazy var contentView: UIView = {
         let v = UIView()
         v.backgroundColor = .white
-        v.layer.cornerRadius = 10.0
+        v.layer.cornerRadius = contengtCornerRadius
         v.clipsToBounds = true
         return v
     }()

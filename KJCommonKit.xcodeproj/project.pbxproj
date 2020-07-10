@@ -24,6 +24,7 @@
 		97AF7A9824B5B5620001EF0B /* KJCommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9724B5B5620001EF0B /* KJCommonHelper.swift */; };
 		97AF7A9A24B5B6D60001EF0B /* KJFloatEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9924B5B6D60001EF0B /* KJFloatEx.swift */; };
 		97AF7A9C24B5B9660001EF0B /* KJEdgeInsetsEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AF7A9B24B5B9660001EF0B /* KJEdgeInsetsEx.swift */; };
+		97FAA37724B8F1B700095721 /* KJXlsxWriterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAA37624B8F1B700095721 /* KJXlsxWriterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		97AF7A9724B5B5620001EF0B /* KJCommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJCommonHelper.swift; sourceTree = "<group>"; };
 		97AF7A9924B5B6D60001EF0B /* KJFloatEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJFloatEx.swift; sourceTree = "<group>"; };
 		97AF7A9B24B5B9660001EF0B /* KJEdgeInsetsEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJEdgeInsetsEx.swift; sourceTree = "<group>"; };
+		97FAA37624B8F1B700095721 /* KJXlsxWriterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJXlsxWriterManager.swift; sourceTree = "<group>"; };
 		A09BEDED0A92D3B56B3C1577 /* Pods_KJCommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJCommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B3D2A195F23B99CAFEE68A /* Pods-KJCommonKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCommonKit.release.xcconfig"; path = "Target Support Files/Pods-KJCommonKit/Pods-KJCommonKit.release.xcconfig"; sourceTree = "<group>"; };
 		D966AD13539FF617E2049C8E /* Pods-KJCommonKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJCommonKit.debug.xcconfig"; path = "Target Support Files/Pods-KJCommonKit/Pods-KJCommonKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		97AF7A8824B56FB50001EF0B /* KJCommonKit */ = {
 			isa = PBXGroup;
 			children = (
+				97FAA37524B8F16A00095721 /* KJXlsxWriter */,
 				97AF7A9224B5B2D40001EF0B /* KJCommonCore */,
 				97AF7A8924B56FC80001EF0B /* KJAlertController */,
 			);
@@ -190,6 +193,14 @@
 				97AF7A9B24B5B9660001EF0B /* KJEdgeInsetsEx.swift */,
 			);
 			path = KJCommonCore;
+			sourceTree = "<group>";
+		};
+		97FAA37524B8F16A00095721 /* KJXlsxWriter */ = {
+			isa = PBXGroup;
+			children = (
+				97FAA37624B8F1B700095721 /* KJXlsxWriterManager.swift */,
+			);
+			path = KJXlsxWriter;
 			sourceTree = "<group>";
 		};
 		E3ACC545868BDDA620A0A50E /* Frameworks */ = {
@@ -383,6 +394,7 @@
 				97AF7A5B24B56FA40001EF0B /* SceneDelegate.swift in Sources */,
 				97AF7A9A24B5B6D60001EF0B /* KJFloatEx.swift in Sources */,
 				97AF7A9124B5A84C0001EF0B /* KJAlertEnumEx.swift in Sources */,
+				97FAA37724B8F1B700095721 /* KJXlsxWriterManager.swift in Sources */,
 				97AF7A9624B5B33F0001EF0B /* KJAttributedStringEx.swift in Sources */,
 				97AF7A8B24B5701D0001EF0B /* KJAlertController.swift in Sources */,
 				97AF7A9C24B5B9660001EF0B /* KJEdgeInsetsEx.swift in Sources */,
