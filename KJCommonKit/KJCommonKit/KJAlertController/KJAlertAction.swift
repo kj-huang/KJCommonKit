@@ -42,7 +42,7 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     @objc(initTitle:style:custom:handler:)
-    public init(title: String?,
+    internal init(title: String?,
                 style: KJAlertAction.Style = .default,
                 custom: KJAlertActionHandler? = nil,
                 handler: KJAlertActionHandler? = nil) {
@@ -62,7 +62,7 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     /// - Returns: KJAlertAction
-    public static func action(title: String?,
+    internal static func action(title: String?,
                               style:KJAlertAction.Style = .default,
                               custom: KJAlertActionHandler? = nil,
                               handler: KJAlertActionHandler? = nil) -> KJAlertAction {
