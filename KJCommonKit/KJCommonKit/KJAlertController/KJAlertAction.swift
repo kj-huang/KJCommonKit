@@ -26,14 +26,14 @@ public class KJAlertAction: NSObject {
     /// 点击回调
     private(set) var handler: KJAlertActionHandler? = nil
     /// 文本颜色，受style影响自动改变，外部可自行修改
-    var titleColor: UIColor = UIColor.black
+    open var titleColor: UIColor = UIColor.black
     /// 字体，受style影响自动改变，外部可自行修改
-    var font: UIFont = UIFont.systemFont(ofSize: 15.0)
+    open var font: UIFont = UIFont.systemFont(ofSize: 15.0)
     /// layer，有渐变背景或其他需求，请外部自行设置
-    var layer: CALayer? = nil
+    open var layer: CALayer? = nil
     /// 富文本，有需要请外部自行设置，当存在该属性时，title、style、font、titleColor等属性无效
-    var attTitle: NSAttributedString? = nil
-
+    open var attTitle: NSAttributedString? = nil
+    
     
     /// 初始化
     /// - Parameters:
@@ -42,10 +42,10 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     @objc(initTitle:style:custom:handler:)
-    init(title: String?,
-         style: KJAlertAction.Style = .default,
-         custom: KJAlertActionHandler? = nil,
-         handler: KJAlertActionHandler? = nil) {
+    public init(title: String?,
+                style: KJAlertAction.Style = .default,
+                custom: KJAlertActionHandler? = nil,
+                handler: KJAlertActionHandler? = nil) {
         super.init()
         self.title = title
         defer {
@@ -62,10 +62,10 @@ public class KJAlertAction: NSObject {
     ///   - custom: 自定义
     ///   - handler: 点击回调
     /// - Returns: KJAlertAction
-    static func action(title: String?,
-                       style:KJAlertAction.Style = .default,
-                       custom: KJAlertActionHandler? = nil,
-                       handler: KJAlertActionHandler? = nil) -> KJAlertAction {
+    public static func action(title: String?,
+                              style:KJAlertAction.Style = .default,
+                              custom: KJAlertActionHandler? = nil,
+                              handler: KJAlertActionHandler? = nil) -> KJAlertAction {
         return KJAlertAction(title: title, style: style, custom: custom, handler: handler)
     }
 }

@@ -86,7 +86,7 @@ public class KJAlertController: UIViewController {
     
     /// 外部init初始化
     @objc(initTitle:message:style:)
-    init(title: String? = nil, message: String? = nil, style: KJAlertController.Style = .sheet) {
+    public init(title: String? = nil, message: String? = nil, style: KJAlertController.Style = .sheet) {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
@@ -102,13 +102,13 @@ public class KJAlertController: UIViewController {
     }
     
     /// 展示
-    open func show(_ from: UIViewController) {
+    public func show(_ from: UIViewController) {
         assert(items.count > 0, "请添加Action")
         from.present(self, animated: true, completion: nil)
     }
     
     /// 添加按钮
-    open func addAction(_ action: KJAlertAction) {
+    public func addAction(_ action: KJAlertAction) {
         assert((action.title != nil && action.title != "") || action.attTitle != nil, "请设置Action的title或attTitle")
         items.append(action)
     }
